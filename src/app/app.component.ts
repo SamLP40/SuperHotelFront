@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { City } from './models/city.model';
 
 @Component({
   selector: 'app-root',
