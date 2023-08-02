@@ -10,7 +10,6 @@ import { Hotel } from './models/hotel.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  [x: string]: any;
   title = 'super-hotel-front';
 
   listCity: City[] | undefined;
@@ -22,12 +21,18 @@ export class AppComponent {
   ngOnInit(): void {
 
   }
-
+  // getAllCities() {
+  //   this.apiServiceService.getCities().subscribe({
+  //     next : (data) => this.listCity = data,
+  //     error : (err) => this.error = err.message,
+  //     complete : () => this.error = null
+  //   })
+  // }
   
   listHotels() {
     this.currentCity = undefined;
-    this.router.navigateByUrl("/hotels/0");
+    this.router.navigateByUrl("/hotels/0")}
   }
-  }
+
   // configurer les méthodes et les interactions avec le back/les événements html
 
